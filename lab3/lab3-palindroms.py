@@ -5,8 +5,8 @@ def isPalindrome(s):
     else:
         return True
 
-str = input("Вхідні дані: ")
-print("Паліндроми: ")
+str = input("Incoming data: ")
+print("Palindroms: ")
 for i in str.split():
     if (isPalindrome(i)):
         print(i)
