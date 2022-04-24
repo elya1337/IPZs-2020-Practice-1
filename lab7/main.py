@@ -1,9 +1,6 @@
 import sqlite3
 import sys
 
-
-global db
-global sql
 db = sqlite3.connect('list')
 sql = db.cursor()
 sql.execute("""CREATE TABLE IF NOT EXISTS accounts (
@@ -96,6 +93,7 @@ def action_with_task(action):
     elif action == "check the task":
         for value in sql.execute("SELECT * FROM your_tasks"):
             print(value)
+            db.commit()
             start_action()
 
 def start_action():
