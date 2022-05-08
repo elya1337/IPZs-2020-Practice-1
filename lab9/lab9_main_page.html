@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style type="text/css">
+        body{
+            background-image: url('ukrainian-waving-flag-5.gif');
+            background-repeat: repeat;
+            text-align: center;
+        }
+        .goto_button{
+            cursor: pointer;
+            border-width: 5px;
+            border-radius: 10px;
+            text-align: center;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: large;
+            margin: 10px 4px;
+        }
+        @keyframes color{
+            0% {color: blue}
+            25% {color: yellow}
+            50% {color: blue}
+            75% {color: yellow;}
+            100% {color: blue}
+        }        
+        h1{
+            font-size: 2em;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-decoration-color: blue;
+            animation: color 4s infinite linear;
+            -webkit-text-stroke: 0.5px black; 
+        }
+        .task_table{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        background-color: white;
+        margin-left:auto;
+        margin-right:auto;
+        }        
+    </style>
+</head>
+<body>
+    <div class="jumnotron text-center">
+    <h1>Слава Україні!!! Героям Слава</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                    <table class="task_table">
+                        <thead>
+                            <tr>
+                                <th>INDEX</th>
+                                <th>TASK</th>
+                                <th>PRIORITY</th>
+                                <th>DATE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Survive from russian invasion</td>
+                                <td>High</td>
+                                <td>31/12/2022</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Kill one russian soldier</td>
+                                <td>High</td>
+                                <td>09/05/2022</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>F*ck putin</td>
+                                <td>Medium</td>
+                                <td>09/05/2022</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Do something</td>
+                                <td>Low</td>
+                                <td>06/06/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sn-6">
+                <button type="button" class="goto_button" onclick="window.location.href='lab9_task_manager.html';">
+                Go to add new task
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
